@@ -1,7 +1,7 @@
 // Define defaults for each variable.
 
 $base-font-family: "Lato", Arial, sans-serif !default;
-$base-font-size:   16px !default;
+$base-font-size:   18px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
@@ -10,15 +10,115 @@ $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $background-color: #fff !default;
-$brand-color:      #2a7ae2 !default;
-
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$brand-color:      #367d9a !default;
+$electric:      	#2098bb !default;
+$white:      	#fff !default;
+$grey:			#e4e4e4;
+$grey_dark:		#2c2c2c;
 
 
 // Import partials.
 @import
   "_partials/_base.scss",
-  "_partials/_header.scss"
+  "_partials/_header.scss",
+  "_partials/_home.scss",
+  "_partials/_page.scss",
+  "_partials/_footer.scss"
 ;
+
+
+.shadow {
+	-webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.1);
+	box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.1);
+}
+
+.btn {
+	background: $brand-color;
+	color:$white;
+	text-transform: uppercase;
+	display: inline-block;
+	@extend .shadow;
+	padding:15px 20px;
+	font-weight:700;
+	font-size:16px;
+	line-height:16px;
+	transition:background 0.3s;
+	&:after {
+		content:"\f105";
+		display: inline-block;
+		margin-left:10px;
+		font-family: "FontAwesome";
+		font-weight:400;
+		font-size: 18px;
+	}
+	&:hover {
+		color:$white;
+		text-decoration: none;
+		background:$electric;
+	}
+}
+
+.content-strip {
+	padding:30px 0;
+	&.alt {
+		background: $grey;
+	}
+	p {
+		margin:0 0 30px;
+	}
+}
+
+.panel-item {
+	background: $white;
+	padding:30px;
+	&.highlight {
+		background:$brand-color;
+		color:$white;
+		h1:after {
+			background: $white;
+		}
+		.btn {
+			background: $white;
+			color:$electric;
+			&:hover {
+				background:$grey;
+			}
+		}
+	}
+}
+
+h1 {
+	font-size:32px;
+	position: relative;
+	font-weight:700;
+	&.underline {
+		padding-bottom:18px;
+		margin-bottom:30px;
+		&:after {
+			position:absolute;
+			bottom:0;
+			left:0;
+			background: $electric;
+			height:4px;
+			width:200px;
+			max-width: 100%;
+			content:"";
+			display: block;
+		}
+	}
+}
+
+.banner {
+
+	h1 {
+		font-weight:700;
+		font-size:48px;
+		line-height:60px;
+		margin-bottom: 30px;
+	}
+	h2 {
+		font-size: 28px;
+		margin-bottom: 30px;
+	}
+}

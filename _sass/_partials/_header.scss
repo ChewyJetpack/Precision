@@ -1,0 +1,45 @@
+header {
+	.logo {
+		padding:30px 0;
+		display: block;
+	}
+	nav {
+		float:right;
+		height:100%;
+		ul {
+			height:100%;
+			margin:0;
+			padding:0;
+			background:$brand-color;
+			li {
+				height:100%;
+				list-style:none;
+				height:100%;
+				position:relative;
+				display:table;
+				float:right;
+				a {
+					height:100%;
+					padding:0;
+					color:$white;
+					text-decoration:none;
+					text-transform:uppercase;
+					display:table-cell;
+					font-weight:600;
+					vertical-align:bottom;
+					font-size: 16px;
+					span {
+						display: inline-block;
+						padding:30px 15px;
+						color:$white;
+					}
+					&:hover, &.active {
+						background:$electric;
+						color:$white;
+						text-decoration:none;
+					}
+				}
+			}
+		}
+	}
+}

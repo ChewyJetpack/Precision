@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About Us
+title: Contact us
 image: http://placehold.it/1000x1000
-permalink: /about/
-order: 3
+permalink: /contact/
+order: 1
 
 
 related_title_1: Title 1

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About Us
+title: Services
 image: http://placehold.it/1000x1000
-permalink: /about/
-order: 3
+permalink: /services/
+order: 2
 
 
 related_title_1: Title 1

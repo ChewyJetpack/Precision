@@ -1,0 +1,12 @@
+footer {
+	background:$grey_dark;
+	color:$white;
+	padding:30px 0;
+	font-size: 16px;
+	.contact-info {
+		span {
+			font-weight:700;
+			text-transform: uppercase;
+		}
+	}
+}

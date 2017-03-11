@@ -2,12 +2,33 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
+<div class="home">  
+  <div class="home-strip banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">        
+        <h1>{{ page.heading }}</h1>
+        <h2>{{ page.subheading }}</h2>
+        <a href="contact" class="btn">Enquire now</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="content-strip">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+            <img src="http://placehold.it/500x500" alt="">
+          </div>
+          <div class="col-md-8">
+            <h1 class="underline">{{ page.content_heading }}</h1>
+            {{ content }}
+            <a href="/contact" class="btn">Enquire now</a>
+          </div>
+      </div>
+    </div>
+  </div>
   
-  {{ content }}
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {% include related.html %}
 
 </div>
