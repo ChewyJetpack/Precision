@@ -31,6 +31,3 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-
-gems: ['kramdown']
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
