@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: contact
 title: Contact us
 image: http://placehold.it/1000x1000
 permalink: /contact/

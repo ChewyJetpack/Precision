@@ -3,3 +3,17 @@
 	color:$white;
 	background: url('images/page-banner.jpg') center center / cover no-repeat; 
 }
+
+@media screen and (max-width: 767px) {
+	.panel-item {
+		margin-bottom:30px;
+		&.highlight {
+			margin:0;
+		}
+	}
+	.page-img {
+		max-width:360px;
+		margin:0 auto;
+		display:block;
+	}
+}

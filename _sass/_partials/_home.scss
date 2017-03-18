@@ -3,3 +3,11 @@
 	color:$white;
 	background: url('images/home-banner.jpg') center center / cover no-repeat; 
 }
+
+@media screen and (max-width: 767px) {
+	.home {
+		.page-img {
+			margin-bottom:30px;
+		}
+	}
+}

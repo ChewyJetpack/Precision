@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+
+    <main class="contact-content">
+    	<div class="page-banner banner">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-md-12">
+	    				<h1>{{ page.title }}</h1>		
+	    			</div>
+	    		</div>
+	    	</div>
+    	</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">                    
+                    <div class="content-box">
+                        <form action="https://formspree.io/drkrepz@gmail.com"
+                              method="POST">
+                              <div class="container-fluid">
+                                  <div class="row">
+                                      <div class="col-md-3">
+                                          <span>Name:</span>
+                                      </div>
+                                      <div class="col-md-9">
+                                            <input type="text" name="name">
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-3">
+                                          <span>Email:</span>
+                                      </div>
+                                      <div class="col-md-9">
+                                            <input type="email" name="_replyto">
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-3">
+                                          <span>Message:</span>
+                                      </div>
+                                      <div class="col-md-9">
+                                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-9 offset-md-3">                                      
+                                            <button type="submit" class="btn">Send</button>
+                                      </div>
+                                  </div>
+                              </div>
+                            
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">                    
+                    <div class="content-box">
+                        {{ content }}
+                        <div class="contact-link">
+                            +44 (020) 12345678<br>
+                            <a href="mailto:contact@precisiontrafficsurveys.com" target="_blank">contact@precisiontrafficsurveys.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

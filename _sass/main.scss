@@ -14,6 +14,7 @@ $brand-color:      #367d9a !default;
 $electric:      	#2098bb !default;
 $white:      	#fff !default;
 $grey:			#e4e4e4;
+$grey_med:		#c2c2c2;
 $grey_dark:		#2c2c2c;
 
 
@@ -23,8 +24,20 @@ $grey_dark:		#2c2c2c;
   "_partials/_header.scss",
   "_partials/_home.scss",
   "_partials/_page.scss",
+  "_partials/_contact.scss",
   "_partials/_footer.scss"
 ;
+
+body {
+	background:$grey_dark;
+}
+
+a {
+	transition:color 0.2s;
+	&:hover {
+		text-decoration: none;
+	}
+}
 
 
 .shadow {
@@ -44,6 +57,8 @@ $grey_dark:		#2c2c2c;
 	font-size:16px;
 	line-height:16px;
 	transition:background 0.3s;
+	border:0;
+	cursor:pointer;
 	&:after {
 		content:"\f105";
 		display: inline-block;
@@ -57,9 +72,13 @@ $grey_dark:		#2c2c2c;
 		text-decoration: none;
 		background:$electric;
 	}
+	&:visited {
+		color:$white;
+	}
 }
 
 .content-strip {
+	background: $white;
 	padding:30px 0;
 	&.alt {
 		background: $grey;
@@ -120,5 +139,28 @@ h1 {
 	h2 {
 		font-size: 28px;
 		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		text-align: center;
+	}
+	h1.underline {
+		&:after {
+			left:50%;
+			transform:translateX(-50%);
+		}
+	}
+	.banner {
+		text-align:center;
+		h1 {
+			font-size:32px;
+			line-height:40px;
+		}
+		h2 {
+			font-size:18px;
+			line-height: 24px;
+		}
 	}
 }

@@ -6,9 +6,10 @@
                 <a href="/" class="logo">
                   <img src="/assets/images/logo.png" alt="Precision Traffic Surveys">
                 </a>
+                <a href="#" class="toggle"><span></span></a>
             </div>
             <div class="col-md-8">
-                <nav>
+                <nav class="main-nav">
                     <ul>
                       {% assign sorted_pages = site.pages | sort:"order" %}
                        {% for node in sorted_pages %}
@@ -30,5 +31,4 @@
             </div>
         </div>
     </div>
-
 </header>
