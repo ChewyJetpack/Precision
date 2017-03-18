@@ -9,7 +9,7 @@ order: 3
 related_title_1: Title 1
 related_title_2: Title 2
 related_link_1: /services
-related_link_2: /clients
+related_link_2: /services
 related_content_1: Content 1
 related_content_2: Content 2
 related_content_3: Content 3
