@@ -1,6 +1,6 @@
 ---
 layout: contact
-title: Contact us
+title: Get a quote today
 image: http://placehold.it/1000x1000
 permalink: /contact/
 order: 1
@@ -15,5 +15,6 @@ related_content_2: Content 2
 related_content_3: Content 3
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
+ What’s your project? Get in touch so we can help you with it. Any helpful details would be great: dates, survey type, location, etc. Help us help you get you the correct data. 
+ 
+We look forward to hearing from you.
